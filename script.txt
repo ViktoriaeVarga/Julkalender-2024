@@ -1,0 +1,40 @@
+
+// script.js
+const texts = [
+    "1: Ge en kollega beröm för att de delade sin åsikt.",
+    "2: Reflektera över hur du bidrar till en psyko-logiskt trygg miljö.",
+    "3: Fundera på vad som gör dig trygg.",
+    "4: Ställ ”varförfrågor” i ett möte för att få fram olika perspektiv.",
+    "5: Tänk på en gång när någon i teamet uttryckte en idé som ni kanske inte var överens om. Hur hanterade ni det?.",
+    "6: Planera en gemensam övning där alla får säga sin åsikt.",
+    "7: Reflektera över hur din egen kommunikationsstil påverkar teamets samarbetsklimat.",
+    "8: Dela ett misstag du har gjort och vad du lärde dig.",
+    "9: Låt alla i teamet dela en osäkerhet utan dömande.",
+   "10: Diskutera vad psykologisk trygghet betyder för ert team.",
+   "11: Uppmuntra en kollega att våga komma med idéer.",
+   "12: Organisera en runda där alla delar något de lärt sig nyligen.",
+   "13: Skriv ner tre sätt du kan förbättra din egen förmåga att skapa psykologisk trygghet för andra.",
+   "14: Reflektera över vad som gör att du känner dig trygg att uttrycka dina idéer.",
+   "15: Visa extra uppskattning idag när någon vågar tala ut.",
+   "16: Gör en snabb övning där alla får säga ”vad är svårt just nu?”.",
+   "17: Lös en utmaning tillsammans i teamet. Fira!.",
+   "18: Skapa en lista med teamets styrkor och hur ni kan utnyttja dem bättre.",
+   "19: Ha en ärlig diskussion om vad som hämmar öppenhet.",
+   "20: Ta en stund att tänka på hur du kan visa mer empati i ditt dagliga arbete.",
+   "21: Ställ en fråga som visar öppenhet och nyfikenhet.",
+   "22: Identifiera en situation där du kunde ha visat mer stöd och öppenhet.",
+   "23: Låt alla dela med sig av ett tillfälle då de kände sig psykologiskt trygga.",
+   "24: Avsluta med att skriva en kort reflektion om vikten av tillit. ."
+];
+
+function showPopup(day) {
+    const popup = document.getElementById("popup");
+    const popupText = document.getElementById("popup-text");
+    popupText.textContent = texts[day - 1];
+    popup.style.display = "flex";
+}
+
+function closePopup() {
+    const popup = document.getElementById("popup");
+    popup.style.display = "none";
+}

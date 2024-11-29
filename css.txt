@@ -1,0 +1,89 @@
+/* style.css */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1b3d35;
+    color: #f5f5f5;
+    text-align: center;
+}
+
+.background {
+    background: linear-gradient(to bottom, #1b3d35, #284b42);
+    padding: 20px;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #fbe2d3;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #c3e3d8;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.day {
+    background-color: #fbe2d3;
+    color: #1b3d35;
+    border: 2px solid #e25a5a;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s; }
+
+.day:hover {
+    background-color: #e25a5a;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: #fbe2d3;
+    color: #1b3d35;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+}
+
+.popup-content p {
+    font-size: 1.2em;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #e25a5a;
+}
