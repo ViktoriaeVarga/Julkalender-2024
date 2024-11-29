@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventskalender - Tillit & Trygghet</title>
+    <link rel="stylesheet" href="style.css"> </head> <body>
+    <div class="background">
+        <h1>Julkalender - Tillit & Trygghet</h1>
+        <p>Klicka på en kula för att läsa dagens text!</p>
+        <div class="calendar">
+            <!-- Luckor 1-24 -->
+            <div class="day" onclick="showPopup(1)">1</div>
+            <div class="day" onclick="showPopup(2)">2</div>
+            <div class="day" onclick="showPopup(3)">3</div>
+            <div class="day" onclick="showPopup(4)">4</div>
+            <div class="day" onclick="showPopup(5)">5</div>
+            <div class="day" onclick="showPopup(6)">6</div>
+            <div class="day" onclick="showPopup(7)">7</div>
+            <div class="day" onclick="showPopup(8)">8</div>
+            <div class="day" onclick="showPopup(9)">9</div>
+            <div class="day" onclick="showPopup(10)">10</div>
+            <div class="day" onclick="showPopup(11)">11</div>
+            <div class="day" onclick="showPopup(12)">12</div>
+            <div class="day" onclick="showPopup(13)">13</div>
+            <div class="day" onclick="showPopup(14)">14</div>
+            <div class="day" onclick="showPopup(15)">15</div>
+            <div class="day" onclick="showPopup(16)">16</div>
+            <div class="day" onclick="showPopup(17)">17</div>
+            <div class="day" onclick="showPopup(18)">18</div>
+            <div class="day" onclick="showPopup(19)">19</div>
+            <div class="day" onclick="showPopup(20)">20</div>
+            <div class="day" onclick="showPopup(21)">21</div>
+            <div class="day" onclick="showPopup(22)">22</div>
+            <div class="day" onclick="showPopup(23)">23</div>
+            <div class="day" onclick="showPopup(24)">24</div>
+        </div>
+        <!-- Popup för dagens text -->
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <p id="popup-text">Här visas dagens text.</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
